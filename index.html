@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="grid-container">
+    <div class="side-bar gridcol-1 grid-item"><!--this is column 1 of grid containing bg image and a label on top of it-->
+        <span>TITLE</span>
+    </div>
+    <div class="content grid-item gridcol-2"> <!--this is second and third col of grid span 2
+    it contains the paragraph, form, and button-->
+        <div class="grid-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur vel consequatur error facilis iure doloribus sit aspernatur dolorem sed odio accusantium amet, ut ex ad dolorum eos! Odio, quis!
+        </div>
+        <form>
+            <h2>Let's do this!</h2>
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="first" class="first-name" required>
+            <label for="last">Last Name</label>
+            <input type="text" id="last" class="last-name" name="last" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="Email" class="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="phone" name="phone" id="phone" class="phone" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="password" required>
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm" id="confirm" class="confirm" required>
+            <button type="submit">Create Account</button>
+            <div>Already have an account? <a href="#">Log in</a></div>
+        </form>
+    </div>
     
 </body>
 </html>
