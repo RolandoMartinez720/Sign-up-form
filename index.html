@@ -12,31 +12,32 @@
     <script src="script.js" defer></script>
 </head>
 <body class="grid-container">
-    <div class="side-bar gridcol-1 grid-item"><!--this is column 1 of grid containing bg image and a label on top of it-->
-        <span>TITLE</span>
+    <div class="side-bar gridcol-1 grid-item"><!--this is column 1 of grid containing bg image and a label on top of it--> </div>
+    <span class="side-bar-heading">ODIN</span><!--changed this to be a grid item as there were issues in positioning it as a child of the element spanning 3 rows-->
+    <div class="grid-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur vel consequatur error facilis iure doloribus sit aspernatur dolorem sed odio accusantium amet, ut ex ad dolorum eos! Odio, quis!
     </div>
-    <div class="content grid-item gridcol-2"> <!--this is second and third col of grid span 2
-    it contains the paragraph, form, and button-->
-        <div class="grid-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur vel consequatur error facilis iure doloribus sit aspernatur dolorem sed odio accusantium amet, ut ex ad dolorum eos! Odio, quis!
-        </div>
-        <form>
-            <h2>Let's do this!</h2>
-            <label for="first">First Name</label>
-            <input type="text" id="first" name="first" class="first-name" required>
-            <label for="last">Last Name</label>
-            <input type="text" id="last" class="last-name" name="last" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="Email" class="email" required>
-            <label for="phone">Phone Number</label>
-            <input type="phone" name="phone" id="phone" class="phone" required>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="password" required>
-            <label for="confirm">Confirm Password</label>
-            <input type="password" name="confirm" id="confirm" class="confirm" required>
-            <button type="submit">Create Account</button>
-            <div>Already have an account? <a href="#">Log in</a></div>
+        <form class="form-grid form-contents">
+                <h2>Let's do this!</h2>
+                <p class="first-grid">
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" name="first" class="first-name" required>
+                </p>
+                <p class="last-grid">
+                    <label for="last">Last Name</label>
+                    <input type="text" id="last" class="last-name" name="last" required>
+                </p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="Email" class="email" required>
+                <label for="phone">Phone Number</label>
+                <input type="phone" name="phone" id="phone" class="phone" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password" required>
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="confirm" id="confirm" class="confirm" required>
+                <button type="submit" class="create-button">Create Account</button>
+                <div>Already have an account? <a href="#">Log in</a></div>
         </form>
-    </div>
+    
     
 </body>
 </html>
