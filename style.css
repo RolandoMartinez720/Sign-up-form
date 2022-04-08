@@ -51,21 +51,45 @@ time, mark, audio, video {
 }
 
 .side-bar{
-
-    align-self: end;
+    background-image: url("grass.jpg");
+    background-size: cover;
     grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
  
 }
-.side-bar> span{
-    display: block;
+.side-bar-heading{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    /* display: block; */
+    align-self: end;
+    height:40%;
     text-align: center;
     color: white;
-    border: 1px solid red;
-    background-color: rgba(0, 0, 0, 0.699);
-    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.content{
-    grid-column: 2 / span 2;
+.grid-paragraph{
+    grid-column: 2 / 4;
+    grid-row: 1 / span 1;
+}
+
+.form-contents{
+    grid-column: 2 / 4;
+    grid-row:2 / 3;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+form>h2{
+    width: 100%;
+    grid-row:1 / 2 ;
+    grid-column: 1 / 4;
 }
